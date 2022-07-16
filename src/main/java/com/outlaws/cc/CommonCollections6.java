@@ -37,7 +37,7 @@ public class CommonCollections6 {
         TiedMapEntry tiedMapEntry = new TiedMapEntry(outerMap,"key");
         HashMap<Object,Object> expMap = new HashMap<>();
         expMap.put(tiedMapEntry,"value");
-//        outerMap.remove("key");
+        outerMap.remove("key");
 
         Field factoryField = LazyMap.class.getDeclaredField("factory");
         factoryField.setAccessible(true);
